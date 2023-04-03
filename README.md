@@ -1,4 +1,4 @@
-# InkDryerKit
+# InkdryerKit
 
 A collection of items designed by Chris Hendrixson. 
 Twitter: @inkdryer

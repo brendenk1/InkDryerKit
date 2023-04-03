@@ -17,3 +17,9 @@ extension Black: InkDryerColor {
         }
     }
 }
+
+struct Black_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPalate(color: Black.self)
+    }
+}

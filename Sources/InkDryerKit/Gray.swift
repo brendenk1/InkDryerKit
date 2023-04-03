@@ -20,3 +20,9 @@ extension Gray: InkDryerColor {
         }
     }
 }
+
+struct Gray_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPalate(color: Gray.self)
+    }
+}

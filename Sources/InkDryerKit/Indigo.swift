@@ -24,3 +24,9 @@ extension Indigo: InkDryerColor {
         }
     }
 }
+
+struct Indigo_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPalate(color: Indigo.self)
+    }
+}

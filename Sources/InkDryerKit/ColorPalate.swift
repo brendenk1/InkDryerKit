@@ -1,7 +1,9 @@
 import SwiftUI
 
-struct ColorPalate: View {
+struct ColorPalate<Color: InkDryerColor>: View {
     var values = 3...14
+    
+    let color: Color.Type
     
     var body: some View {
         Grid {
@@ -11,31 +13,13 @@ struct ColorPalate: View {
                     GridRow {
                         if value < 14 {
                             Text(value, format: .number.precision(.integerLength(2)))
-                            Coral.colorFor(value: value)
-                            Orange.colorFor(value: value)
-                            Brown.colorFor(value: value)
-                            Green.colorFor(value: value)
-                            Blue.colorFor(value: value)
-                            Indigo.colorFor(value: value)
-                            Black.colorFor(value: value)
-                            Gray.colorFor(value: value)
+                            Color.colorFor(value: value)
                         }
                         else {
                             Group {
                                 Text("L")
-                                Text(Coral.hue)
-                                Text(Orange.hue)
-                                Text(Brown.hue)
-                                Text(Green.hue)
-                                Text(Blue.hue)
-                                Text(Indigo.hue)
-                                Text(Black.hue)
-                                Text(Gray.hue)
+                                Text(Color.hue)
                             }
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.1)
-                            .allowsTightening(true)
-                            
                         }
                     }
                     
@@ -46,9 +30,15 @@ struct ColorPalate: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct ColorPalate_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPalate()
-            .padding()
+        Black_Previews.previews
+        Blue_Previews.previews
+        Brown_Previews.previews
+        Coral_Previews.previews
+        Gray_Previews.previews
+        Green_Previews.previews
+        Indigo_Previews.previews
+        Orange_Previews.previews
     }
 }

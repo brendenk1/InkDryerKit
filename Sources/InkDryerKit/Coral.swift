@@ -22,3 +22,9 @@ extension Coral: InkDryerColor {
         }
     }
 }
+
+struct Coral_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPalate(color: Coral.self)
+    }
+}

@@ -9,7 +9,7 @@ where RawValue == Int
 }
 
 public extension InkDryerColor {
-    static func colorFor(value: Int) -> Color? {
-        Self(rawValue: value)?.color
+    static func colorFor(value: Int) -> Color {
+        Self(rawValue: value)?.color ?? .clear
     }
 }

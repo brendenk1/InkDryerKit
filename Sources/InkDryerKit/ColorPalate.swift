@@ -6,27 +6,27 @@ struct ColorPalate: View {
     var body: some View {
         Grid {
             ForEach(values, id: \.self) { value in
-                if value == 10 { Divider() }
-                GridRow {
-                    if value < 14 {
-                        Text(value, format: .number.precision(.integerLength(2)))
-                        
-                        if let blue = Blue.colorFor(value: value) {
-                            blue
+                Group {
+                    if value == 10 { Divider() }
+                    GridRow {
+                        if value < 14 {
+                            Text(value, format: .number.precision(.integerLength(2)))
+                            Coral.colorFor(value: value)
+                            Brown.colorFor(value: value)
+                            Blue.colorFor(value: value)
+                            Black.colorFor(value: value)
                         }
-                        
-                        if let black = Black.colorFor(value: value) {
-                            black
+                        else {
+                            Text("L")
+                            Text(Coral.hue)
+                            Text(Brown.hue)
+                            Text(Blue.hue)
+                            Text(Black.hue)
                         }
                     }
-                    else {
-                        Text("L")
-                        Text(Blue.hue)
-                        Text(Black.hue)
-                    }
+                    
+                    if value == 10 { Divider() }
                 }
-                
-                if value == 10 { Divider() }
             }
         }
     }

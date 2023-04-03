@@ -1,3 +1,8 @@
 # InkDryerKit
 
-A description of this package.
+A collection of items designed by Chris Hendrixson. 
+Twitter: @inkdryer
+
+## License
+
+See License.txt

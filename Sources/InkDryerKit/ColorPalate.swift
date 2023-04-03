@@ -47,6 +47,8 @@ struct ColorPalate_Previews: PreviewProvider {
         Group {
             Red_Previews.previews
             Teal_Previews.previews
+            White_Previews.previews
+            Yellow_Previews.previews
         }
     }
 }

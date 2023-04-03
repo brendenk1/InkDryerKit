@@ -14,6 +14,10 @@ The API will expose each _hue_ as its own object, accessed by its luminance valu
 Purple.ten.color // SwiftUI color 
 ```
 
+## Swift Package Manager
+
+This is available as a Swift Package.
+
 ## License
 
 See License.txt

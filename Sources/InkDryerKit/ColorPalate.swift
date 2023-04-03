@@ -13,15 +13,19 @@ struct ColorPalate: View {
                             Text(value, format: .number.precision(.integerLength(2)))
                             Coral.colorFor(value: value)
                             Brown.colorFor(value: value)
+                            Green.colorFor(value: value)
                             Blue.colorFor(value: value)
                             Black.colorFor(value: value)
+                            Gray.colorFor(value: value)
                         }
                         else {
                             Text("L")
                             Text(Coral.hue)
                             Text(Brown.hue)
+                            Text(Green.hue)
                             Text(Blue.hue)
                             Text(Black.hue)
+                            Text(Gray.hue)
                         }
                     }
                     

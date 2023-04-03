@@ -15,17 +15,25 @@ struct ColorPalate: View {
                             Brown.colorFor(value: value)
                             Green.colorFor(value: value)
                             Blue.colorFor(value: value)
+                            Indigo.colorFor(value: value)
                             Black.colorFor(value: value)
                             Gray.colorFor(value: value)
                         }
                         else {
-                            Text("L")
-                            Text(Coral.hue)
-                            Text(Brown.hue)
-                            Text(Green.hue)
-                            Text(Blue.hue)
-                            Text(Black.hue)
-                            Text(Gray.hue)
+                            Group {
+                                Text("L")
+                                Text(Coral.hue)
+                                Text(Brown.hue)
+                                Text(Green.hue)
+                                Text(Blue.hue)
+                                Text(Indigo.hue)
+                                Text(Black.hue)
+                                Text(Gray.hue)
+                            }
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
+                            .allowsTightening(true)
+                            
                         }
                     }
                     
@@ -39,5 +47,6 @@ struct ColorPalate: View {
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         ColorPalate()
+            .padding()
     }
 }

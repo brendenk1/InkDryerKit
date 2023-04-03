@@ -1,11 +1,13 @@
 import SwiftUI
 
-enum Black {
-    case eight, nine, ten, eleven
+public enum Black: Int {
+    case eight = 8, nine, ten, eleven
 }
 
-extension Black {
-    var color: Color {
+extension Black: InkDryerColor {
+    public static var baseColor: Black = .ten
+    
+    public var color: Color {
         switch self {
         case .eight:    return Color("08_#484848", bundle: .module)
         case .nine:     return Color("09_#323030", bundle: .module)

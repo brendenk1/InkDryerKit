@@ -32,15 +32,20 @@ struct ColorPalate<Color: InkDryerColor>: View {
 
 struct ColorPalate_Previews: PreviewProvider {
     static var previews: some View {
-        Black_Previews.previews
-        Blue_Previews.previews
-        Brown_Previews.previews
-        Coral_Previews.previews
-        Gray_Previews.previews
-        Green_Previews.previews
-        Indigo_Previews.previews
-        Orange_Previews.previews
-        Pink_Previews.previews
-        Purple_Previews.previews
+        Group {
+            Black_Previews.previews
+            Blue_Previews.previews
+            Brown_Previews.previews
+            Coral_Previews.previews
+            Gray_Previews.previews
+            Green_Previews.previews
+            Indigo_Previews.previews
+            Orange_Previews.previews
+            Pink_Previews.previews
+            Purple_Previews.previews
+        }
+        Group {
+            Red_Previews.previews
+        }
     }
 }

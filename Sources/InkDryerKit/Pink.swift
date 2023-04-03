@@ -23,6 +23,6 @@ extension Pink: InkDryerColor {
 
 struct Pink_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPalate(color: Pink.self)
+        ColorPalette(color: Pink.self)
     }
 }

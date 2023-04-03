@@ -20,6 +20,6 @@ extension White: InkDryerColor {
 
 struct White_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPalate(color: White.self)
+        ColorPalette(color: White.self)
     }
 }

@@ -6,7 +6,7 @@ Twitter: @inkdryer
 ## Available Resources
 Colors!
 
-See _Color Palate.png_ for full Color Palate.
+See _Color Palette.png_ for full Color Palette.
 
 The API will expose each _hue_ as its own object, accessed by its luminance value. 
 

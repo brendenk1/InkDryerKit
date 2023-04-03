@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ColorPalate<Color: InkDryerColor>: View {
+struct ColorPalette<Color: InkDryerColor>: View {
     var values = 3...14
     
     let color: Color.Type

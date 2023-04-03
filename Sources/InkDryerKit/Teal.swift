@@ -26,6 +26,6 @@ extension Teal: InkDryerColor {
 
 struct Teal_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPalate(color: Teal.self)
+        ColorPalette(color: Teal.self)
     }
 }

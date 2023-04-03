@@ -24,6 +24,6 @@ extension Red: InkDryerColor {
 
 struct Red_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPalate(color: Red.self)
+        ColorPalette(color: Red.self)
     }
 }

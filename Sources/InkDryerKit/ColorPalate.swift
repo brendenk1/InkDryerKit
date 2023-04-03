@@ -40,5 +40,6 @@ struct ColorPalate_Previews: PreviewProvider {
         Green_Previews.previews
         Indigo_Previews.previews
         Orange_Previews.previews
+        Pink_Previews.previews
     }
 }

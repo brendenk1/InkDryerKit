@@ -5,7 +5,8 @@ public enum Blue: Int {
 }
 
 extension Blue: InkDryerColor {
-    public static var baseColor: Blue = .ten
+    public static var baseColor: Blue   = .ten
+    public static var hue: String       = "Blue"
     
     public var color: Color {
         switch self {
